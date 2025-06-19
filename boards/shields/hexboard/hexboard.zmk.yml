@@ -1,0 +1,11 @@
+file_format: "1"
+id: hexboard
+name: HexBoard
+type: shield
+url: https://github.com/hephaestushex/zmk-config-hexboard
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - hexboard_left
+  - hexboard_right
