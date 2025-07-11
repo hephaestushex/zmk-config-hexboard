@@ -21,7 +21,7 @@
                 &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT  &kp CARET &kp AMPS  &kp STAR     &kp LPAR   &kp RPAR 
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5           &kp F6 &kp F7  &kp F8     &kp F9   &kp F10   
                      &trans &trans &kp LSHFT                 &kp SPACE &mo 3 &kp LALT
-
+            >;
         };
 
         symbol_layer { // Layer 2
@@ -30,6 +30,7 @@
                 &kp SQT &kp LBKT &kp RBKT &kp GRAVE &kp PRCNT     &kp HOME &kp END &kp PG_UP &kp PG_DN &trans  
                 &kp F11 &kp F12 &trans &trans &trans              &trans &trans &trans &trans &trans  
                      &trans &trans &kp LSHFT                       &kp SPACE &mo 2 &trans
+            >;
         };
 
         nav_layer { // Layer 3
