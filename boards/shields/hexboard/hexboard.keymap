@@ -26,7 +26,7 @@
 
         symbol_layer { // Layer 2
             bindings = <
-                &kp EQUAL &kp MINUS &kp FSLH &kp BLSH &kp FSLH    &kp ESC &kp TAB  &kp BSPC &kp DEL &kp INS    
+                &kp EQUAL &kp MINUS &kp FSLH &kp BSLH &kp FSLH    &kp ESC &kp TAB  &kp BSPC &kp DEL &kp INS    
                 &kp SQT &kp LBKT &kp RBKT &kp GRAVE &kp PRCNT     &kp HOME &kp END &kp PG_UP &kp PG_DN &trans  
                 &kp F11 &kp F12 &trans &trans &trans              &trans &trans &trans &trans &trans  
                      &trans &trans &kp LSHFT                       &kp SPACE &mo 2 &trans
