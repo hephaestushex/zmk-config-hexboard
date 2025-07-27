@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     default_transform: keymap_transform0 {
@@ -26,6 +27,64 @@
         display-name = "Default Layout";
         kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
         transform = <&default_transform>; // Label of the matrix transform for this layout
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0   38       0     0     0>
+            , <&key_physical_attrs 100 100  100   12       0     0     0>
+            , <&key_physical_attrs 100 100  200    0       0     0     0>
+            , <&key_physical_attrs 100 100  301   12       0     0     0>
+            , <&key_physical_attrs 100 100  401   25       0     0     0>
+            , <&key_physical_attrs 100 100  769   25       0     0     0>
+            , <&key_physical_attrs 100 100  869   12       0     0     0>
+            , <&key_physical_attrs 100 100  970    0       0     0     0>
+            , <&key_physical_attrs 100 100 1070   12       0     0     0>
+            , <&key_physical_attrs 100 100 1170   38       0     0     0>
+            , <&key_physical_attrs 100 100    0  138       0     0     0>
+            , <&key_physical_attrs 100 100  100  113       0     0     0>
+            , <&key_physical_attrs 100 100  200  100       0     0     0>
+            , <&key_physical_attrs 100 100  301  113       0     0     0>
+            , <&key_physical_attrs 100 100  401  125       0     0     0>
+            , <&key_physical_attrs 100 100  769  125       0     0     0>
+            , <&key_physical_attrs 100 100  869  113       0     0     0>
+            , <&key_physical_attrs 100 100  970  100       0     0     0>
+            , <&key_physical_attrs 100 100 1070  113       0     0     0>
+            , <&key_physical_attrs 100 100 1170  138       0     0     0>
+            , <&key_physical_attrs 100 100    0  238       0     0     0>
+            , <&key_physical_attrs 100 100  100  213       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  301  213       0     0     0>
+            , <&key_physical_attrs 100 100  401  226       0     0     0>
+            , <&key_physical_attrs 100 100  769  226       0     0     0>
+            , <&key_physical_attrs 100 100  869  213       0     0     0>
+            , <&key_physical_attrs 100 100  970  200       0     0     0>
+            , <&key_physical_attrs 100 100 1070  213       0     0     0>
+            , <&key_physical_attrs 100 100 1170  238       0     0     0>
+            , <&key_physical_attrs 100 100  251  351       0     0     0>
+            , <&key_physical_attrs 100 100  364  364    1000   414   414>
+            , <&key_physical_attrs 100 100  470  395    2000   520   445>
+            , <&key_physical_attrs 100 100  700  395 (-2000)   750   445>
+            , <&key_physical_attrs 100 100  806  364 (-1000)   856   414>
+            , <&key_physical_attrs 100 100  919  351       0     0     0>
+            ;
+    };
+};
+
+/ {
+    hexboard_position_map {
+        compatible = "zmk,physical-layout-position-map";
+        complete; // Optional, see 'Example non-complete position map'
+
+        // Child node 1 here
+
+        hexboard_map: hexboard {
+            physical-layout = <&physical_layout0>;
+            positions // This is equivalent to `positions = <0 1 2 3>;`, reshaped for readability
+                = < 0  1  2  3  4  5  6  7  8  9>
+                , < 10  11  12  13  14  15  16  17  18  19>
+                , < 20  21  22  23  24  25  26  27  28  29>
+                , < 30  31  32  33  34  35>
+                ;
+        };
     };
 };
 
